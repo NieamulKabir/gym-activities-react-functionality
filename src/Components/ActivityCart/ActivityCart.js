@@ -52,7 +52,7 @@ const ActivityCart = (props) => {
 
                     <div className='lg:flex justify-evenly bg-slate-200 px-3 py-4 rounded-xl'>
 
-                        <div>
+                        <div className='bg-yellow-50 px-2 py-1 rounded-2xl'>
                             <button onClick={() => {
                                 setBreakTime(10)
                                
@@ -60,7 +60,7 @@ const ActivityCart = (props) => {
                             </button>
                         </div>
 
-                        <div>
+                        <div  className='bg-yellow-50 px-2 py-1 rounded-2xl'>
                             <button onClick={() => {
                                 setBreakTime(20)
                                
@@ -68,14 +68,14 @@ const ActivityCart = (props) => {
                             </button>
                         </div>
 
-                        <div>
+                        <div  className='bg-yellow-50 px-2 py-1 rounded-2xl'>
                             <button onClick={() => {
                                 setBreakTime(30)
                               
                             }}><span>30</span>s
                             </button>
                         </div>
-                        <div>
+                        <div  className='bg-yellow-50 px-2 py-1 rounded-2xl'>
                             <button onClick={() => {
                                 setBreakTime(40)
                               
