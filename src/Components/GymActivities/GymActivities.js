@@ -20,7 +20,8 @@ const GymActivities = () => {
     return (
         <div className='w-11/12 my-14 mx-auto'>
             <div className='flex'>
-                <div className='grid grid-cols-3 gap-5 '>
+
+                <div className='grid  grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 '>
 
                     {
                         items.map(item => <Activity
@@ -31,7 +32,8 @@ const GymActivities = () => {
                     }
                 </div>
 
-                <div>
+
+                <div className=''>
                     <ActivityCart
                         cart={cart}
                         key={cart.id}
