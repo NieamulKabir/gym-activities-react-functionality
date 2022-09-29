@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { addToDb } from '../Utilitis/fakeDb';
+
 
 const ActivityCart = (props) => {
     const { cart } = props
@@ -9,7 +9,7 @@ const ActivityCart = (props) => {
     const [breakTime, setBreakTime] = useState('')
 
     const successHandle = () => {
-        toast('successful');
+        toast('Successfully Completed Your activity');
     }
 
     let totalTime = 0;
@@ -27,7 +27,7 @@ const ActivityCart = (props) => {
                         <img className='w-10 h-10 lg:w-14 lg:h-14 rounded-2xl' src="https://nieamulkabir.github.io/gym-react/image/Treadmill.jpg" alt="" />
                         <div className='ml-4'>
                             <h1 className='text-sm lg:text-xl font-bold'>Nieamul Kabir</h1>
-                            <p className='text-sm lg:text-xl font-semibold'><i className="fa-solid fa-location-dot"></i>Mirpur Dhaka</p>
+                            <p className='text-sm lg:text-lg font-semibold'><i className="fa-solid fa-location-dot"></i>Mirpur Dhaka</p>
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@ const ActivityCart = (props) => {
                         <div>
                             <button onClick={() => {
                                 setBreakTime(10)
-                                addToDb()
+                               
                             }}><span>10</span>s
                             </button>
                         </div>
@@ -63,7 +63,7 @@ const ActivityCart = (props) => {
                         <div>
                             <button onClick={() => {
                                 setBreakTime(20)
-                                addToDb()
+                               
                             }}><span>20</span>s
                             </button>
                         </div>
@@ -71,14 +71,14 @@ const ActivityCart = (props) => {
                         <div>
                             <button onClick={() => {
                                 setBreakTime(30)
-                                addToDb()
+                              
                             }}><span>30</span>s
                             </button>
                         </div>
                         <div>
                             <button onClick={() => {
                                 setBreakTime(40)
-                                addToDb()
+                              
                             }}><span>40</span>s
                             </button>
                         </div>
